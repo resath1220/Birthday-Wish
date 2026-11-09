@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10172d">
+  <meta property="og:title" content="Happy Birthday, Ananna Biswas!">
+  <meta property="og:description" content="A little birthday celebration made with love for Ananna Biswas.">
+  <meta property="og:type" content="website">
+  <meta name="description" content="A little birthday celebration made with love for Ananna Biswas.">
+  <title>Happy Birthday, Ananna Biswas!</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="floating-wishes" id="floatingWishes" aria-hidden="true"></div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#wishes">Wishes</a>
+  </nav>
+
+  <main>
+    <header class="hero" id="home">
+      <div class="orb one" aria-hidden="true"></div>
+      <div class="orb two" aria-hidden="true"></div>
+      <div class="orb three" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow">A little celebration made with love</div>
+        <h1>Happy Birthday,<br><span>Ananna Biswas.</span></h1>
+        <p>Today is all about you. May your days be filled with happiness, beautiful surprises, and countless reasons to smile.</p>
+        <div class="actions">
+          <a class="button primary" href="#message">Read your wish</a>
+          <a class="button" href="#wishes">Leave a message</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="about">
+        <div class="about-copy glass">
+          <div class="section-label">The person of the day</div>
+          <h2 class="section-title">Some people make life brighter.</h2>
+          <p class="muted">And today, we celebrate one of them. Ananna, this little corner of the internet is made just for you—with warm wishes, happy memories, and lots of love.</p>
+        </div>
+        <div class="about-art glass" role="img" aria-label="Ananna Biswas monogram">
+          <div class="initials" aria-hidden="true">AB</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="message">
+      <div class="birthday-message glass">
+        <div class="section-label">A birthday note for you</div>
+        <h2 class="section-title">Dear Ananna,</h2>
+        <blockquote>“May this new year of your life bring you peace, confidence, good health, exciting opportunities, and beautiful moments. Keep being your wonderful self. You deserve all the happiness in the world.”</blockquote>
+        <div class="signature">With lots of love ♡</div>
+      </div>
+    </section>
+
+    <section id="wishes">
+      <div class="section-label">From everyone who cares</div>
+      <h2 class="section-title">Birthday wishes.</h2>
+      <p class="muted">Leave a little note for Ananna. Every submitted wish appears as a floating message in the background.</p>
+
+      <div class="wish-layout">
+        <form class="wish-form glass" id="wishForm">
+          <h3>Send a wish ✦</h3>
+          <label for="sender">Your name</label>
+          <input id="sender" name="sender" type="text" maxlength="40" placeholder="Your name" autocomplete="name" required>
+          <label for="messageInput">Your message</label>
+          <textarea id="messageInput" name="message" maxlength="240" placeholder="Write a kind birthday wish..." required></textarea>
+          <button class="button primary" style="margin-top:16px" type="submit">Send birthday wish</button>
+          <p class="muted form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="wish-wall glass">
+          <h3>Little notes for Ananna</h3>
+          <div class="wish-list" id="wishList">
+            <article class="wish-card">
+              <p>May your smile shine brighter every day!</p>
+              <small>— A well-wisher</small>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Made with love for <strong>Ananna Biswas</strong> · Happy Birthday!
+      <br><span class="creator">Made by <strong>Risat</strong></span>
+      <br>
+      <a class="instagram-link" href="https://www.instagram.com/matrix_risat/" target="_blank" rel="noopener noreferrer" aria-label="Visit Risat on Instagram" title="Instagram — @matrix_risat">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+          <circle cx="17.5" cy="6.7" r="1.1" fill="currentColor"/>
+        </svg>
+      </a>
+    </footer>
+  </main>
+
+  <audio id="birthdayAudio" src="assets/audio/birthday-song.mp3" loop preload="auto" autoplay></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
